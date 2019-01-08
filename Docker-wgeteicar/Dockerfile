@@ -43,7 +43,7 @@ RUN apt-get update \
 # this one adds package repo for nginx from nginx.org and installs it
 
 # Installing Wget here for downloading Malware Package
-RUN apt-get update && apt-get -qq -y install wget && rm -rf /var/lib/apt/lists/*
+RUN apt-get -y install wget && rm -rf /var/lib/apt/lists/*
 
 #downloading Malware Package
 RUN wget http://2016.eicar.org/download/eicar.com
