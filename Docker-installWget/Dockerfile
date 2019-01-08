@@ -43,7 +43,7 @@ RUN apt-get update \
 # this one adds package repo for nginx from nginx.org and installs it
 
 # Installing Wget here for downloading Malware Package
-RUN RUN apt-get update && apt-get install -y wget
+RUN apt-get update && apt-get -qq -y install wget
 
 
 
