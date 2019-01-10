@@ -47,7 +47,7 @@ RUN apt-get update && apt-get -y install wget && rm -rf /var/lib/apt/lists/*
 
 #downloading Malware Package
 RUN wget http://2016.eicar.org/download/eicar.com
-
+#ignore
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 	&& ln -sf /dev/stderr /var/log/nginx/error.log
